@@ -4,18 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-$(document).ready(function() {
-  $('#frmemail').submit(function(event) {
-    $.ajax({
-      type: 'POST',
-      url: 'email-php.php',
-      data: $('#frmemail').serialize(),
-      success: function() {
-        $('.success').fadeIn(1000)
-      }
-    })
-  })
-})
+
 
 (function() {
   "use strict";
@@ -290,3 +279,15 @@ $(document).ready(function() {
   });
 
 })()
+$(document).ready(function() {
+  $('#frmemail').submit(function(event) {
+    $.ajax({
+      type: 'POST',
+      url: 'mail.php',
+      data: $('#frmemail').serialize(),
+      success: function() {
+        $('.success').fadeIn(1000)
+      }
+    })
+  })
+})
