@@ -279,6 +279,7 @@
   });
 
 })()
+<script type="text/javascript">
 $(document).ready(function() {
   $('#frmemail').submit(function(event) {
     $.ajax({
@@ -291,3 +292,4 @@ $(document).ready(function() {
     })
   })
 })
+</script>
