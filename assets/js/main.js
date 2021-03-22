@@ -279,17 +279,3 @@
   });
 
 })()
-<script type="text/javascript">
-$(document).ready(function() {
-  $('#frmemail').submit(function(event) {
-    $.ajax({
-      type: 'POST',
-      url: 'mail.php',
-      data: $('#frmemail').serialize(),
-      success: function() {
-        $('.success').fadeIn(1000)
-      }
-    })
-  })
-})
-</script>
